@@ -114,6 +114,18 @@
     float : left;
 }
 
+.Shipment-Input-Details-Label-Container {
+
+    float : left;
+    padding-top : 175px;
+}
+
+.Shipment-Input-Details-Input-Container {
+
+    float : left;
+    padding-top : 180px;
+}
+
 .Shipment-Container-buffer {
 
     float : left;

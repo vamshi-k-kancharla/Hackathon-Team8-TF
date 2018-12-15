@@ -38,7 +38,7 @@
 
             <a class="LoC-Status" onclick='processNavigationBar_ToLoCStatus(event);' href="./TFLoCStatus.html">LoC-Status</a>
             <a class="Buyer-Bank" onclick='processNavigationBar_ToBuyerBank(event);' href="./TFBuyerBank.html">Buyer-Bank</a>
-            <a class="Seller-Bank" onclick='processNavigationBar_ToSellerBank(event);' href="./TFSellerBank.html">Seller-Bank</a>
+            <!--a class="Seller-Bank" onclick='processNavigationBar_ToSellerBank(event);' href="./TFSellerBank.html">Seller-Bank</!--a>-->
             <a class="Seller" onclick='processNavigationBar_ToSeller(event);' href="./TFSeller.html">Seller</a>
             <a class="Contact-Info" onclick='processNavigationBar_ToContactInfo(event);' href="./TFContactInfo.html">Contract-US</a>
 
@@ -62,9 +62,17 @@
 
                 <p id="buffer2" style="padding-bottom : 10px"> </p>
 
-                <div class="Shipment-Label-Container" style="width: 35%">
+                <div class="Shipment-Label-Container" style="width: 25%">
 
                     <label id="Label_Seller_Name" class="Label-Seller-Name" style="padding-right: 40px; color: #7d4438">Seller</label>
+                    <br />
+                    <br />
+
+                    <label id="Label_Seller_Id" class="Label-Seller-Id" style="padding-right: 40px; color: #7d4438">Seller Id</label>
+                    <br />
+                    <br />
+
+                    <label id="Label_Bank_Name" class="Label-Bank-Name" style="padding-right: 40px; color: #7d4438">Bank Name</label>
                     <br />
                     <br />
 
@@ -76,7 +84,7 @@
                     <br />
                     <br />
 
-                    <label id="Label_Credit_Amount" class="Label-Credit-Amount" style="padding-right: 40px; color: #7d4438">Credit Amount (FlexiTrade Tokens)</label>
+                    <label id="Label_Credit_Amount" class="Label-Credit-Amount" style="padding-right: 40px; color: #7d4438">Credit Amount</label>
                     <br />
                     <br />
 
@@ -84,7 +92,7 @@
 
                 </div>
 
-                <div class="Shipment-Input-Container" style="width: 35%">
+                <div class="Shipment-Input-Container" style="width: 25%">
 
                     <select id="Seller-Input">
                         <option value="BMW">BMW ( Germany )</option>
@@ -101,6 +109,36 @@
                     <br />
                     <br />
                     
+                    <select id="Seller-Id-Input">
+                        <option value="BMW-Id">ABCD-2345</option>
+                        <option value="Adidas-Id">ABCD-2346</option>
+                        <option value="Firestar-Id">ABCD-2347</option>
+                        <option value="Reliance-Id">ABCD-2348</option>
+                        <option value="Kohinoor-Id">ABCD-2349</option>
+                        <option value="Eni-Id">ABCD-2350</option>
+                        <option value="Finmeccanica-Id">ABCD-2351</option>
+                        <option value="Intel-Id">ABCD-2352</option>
+                        <option value="PepsiCo-Id">ABCD-2353</option>
+                        <option value="P & G-Id">ABCD-2354</option>
+                    </select>
+                    <br />
+                    <br />
+
+                    <select id="Seller-Id-Input">
+                        <option value="Deutsche">Deutsche Bank</option>
+                        <option value="VarenGold">VarenGold Bank</option>
+                        <option value="HDFC">HDFC Bank</option>
+                        <option value="ICICI">ICICI Bank</option>
+                        <option value="Yes">Yes Bank</option>
+                        <option value="Banca Credito Italiano">Banca Credito Italiano</option>
+                        <option value="Banca Monte Dei Paschi Di Siena">Banca Monte Dei Paschi Di Siena</option>
+                        <option value="American Express">American Express</option>
+                        <option value="ANZ">ANZ</option>
+                        <option value="Bank Of America">Bank Of America</option>
+                    </select>
+                    <br />
+                    <br />
+
                     <select id="Shipment-Input">
                         <option value="Cars">Cars</option>
                         <option value="Apparel">Apparel</option>
@@ -128,6 +166,26 @@
 
                 </div>
 
+                <div class="Shipment-Input-Details-Label-Container" style="width: 10%">
+
+                    <label id="Label_Currency_Unit" class="Label-Currency-Unit" style="color: #7d4438">Unit Of Currency</label>
+                    <br />
+                    <br />
+
+                </div>
+
+                <div class="Shipment-Input-Details-Input-Container" style="width: 15%">
+
+                    <select id="Currency-Unit">
+                        <option value="Dollars">USD</option>
+                        <option value="Rupees">INR</option>
+                        <option value="Euro">EURO</option>
+                    </select>
+                    <br />
+                    <br />
+
+                </div>
+
             </div>
 
             <div class="Shipment-Submit-Input">
@@ -135,7 +193,7 @@
                 <br />
                 <br />
                 <label id="Label_buffer" style="padding-right: 15%"></label>
-                <button id="Shipment-Order-Submit" class="Shipment-Order-Submit-button">Place Shipment</button>
+                <button id="Shipment-Order-Submit" class="Shipment-Order-Submit-button">Request LC</button>
 
             </div>
 
